@@ -1,0 +1,34 @@
+html {
+height: 100%;
+
+}
+body {
+    background-color: #FFBC8F;
+    color: aqua;
+}
+header {
+    background-color: #853907;
+
+}
+nav {
+    background-color: #853907
+
+}
+main {
+    background-color: #853907
+}
+article {
+    background-color: #853907
+}
+footer {
+    background-color: #853907
+
+}
+img {
+    width: 100%;
+        height: auto;
+
+}
+.Imagetitle {
+    text-align: center
+}
