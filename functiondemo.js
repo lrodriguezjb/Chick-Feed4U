@@ -24,17 +24,11 @@ function makeChicken (nameOfChicken, typeOfChicken) {
 return chicken;
 }
 
-var newChicken = prompt('Do you want a chicken?');
-
+var newChicken = prompt('Do you want a free promotional chicken?');
 if (newChicken === 'yes') {
-    // if so, ask for name and description
     var chickenName = prompt("What will the chickens name be?");
     var chickenType = prompt("What type of Chicken?");
-  
-    // give name and description to the constructCatHTML function to let it do its thing
     var chickenhtml = makeChicken(chickenName, chickenType);
-  
-    // hand the resulting HTML off to document.write
     console.log(chickenhtml);
     document.write(chickenhtml);
   }
