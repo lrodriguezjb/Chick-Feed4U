@@ -15,20 +15,22 @@ function makeChicken (nameOfChicken, typeOfChicken) {
     var chicken = '<article>' +
     '<img src="newchicken.jpg">' +
     '<h3>'
-       + 'Healthy Rooster' +
+       + nameOfChicken +
     '</h3>' +
     '<p>' +
         'As you can see our product is nothing but the best and you just picked the best chicken!' +
+        typeOfChicken +
     '</p>' +
 '</article>'
 return chicken;
 }
 
 var newChicken = prompt('Do you want a free promotional chicken?');
-if (newChicken === 'yes') {
+while (newChicken === 'yes') {
     var chickenName = prompt("What will the chickens name be?");
     var chickenType = prompt("What type of Chicken?");
     var chickenhtml = makeChicken(chickenName, chickenType);
     console.log(chickenhtml);
     document.write(chickenhtml);
+    newChicken = prompt('Do You Want to Add another free chicken?');
   }
