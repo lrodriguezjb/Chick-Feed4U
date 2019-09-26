@@ -26,7 +26,7 @@ return chicken;
 }
 
 var newChicken = prompt('Do you want a free promotional chicken?');
-while (newChicken === 'yes') {
+while (newChicken === 'yes' || newChicken === 'Yes' || newChicken === 'YES') {
     var chickenName = prompt("What will the chickens name be?");
     var chickenType = prompt("What type of Chicken?");
     var chickenhtml = makeChicken(chickenName, chickenType);
